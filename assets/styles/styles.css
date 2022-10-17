@@ -255,8 +255,8 @@ label:active:after {
     }
     #card2
     {
-        padding-top: 0px;
-        margin-bottom: 0px;
+        maring-top: 10px;
+        margin-bottom: 10px;
         position:relative;
         top:0px;
     }
