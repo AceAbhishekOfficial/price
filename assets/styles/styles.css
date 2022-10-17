@@ -1,0 +1,268 @@
+
+@font-face {
+    font-family:Montserrat ;
+    src: url("../fonts/Montserrat-Bold.ttf");
+    
+ }
+ 
+body{
+    background-color:rgb(241,241,253) ;
+    margin: 0px;
+
+   
+}
+
+.backBottom
+{
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+}
+.backTop
+{
+    z-index: -1;
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+.main
+{
+    margin-top: 50px;
+    /* background-color: rgba(246, 149, 246, 0.312); */
+}
+.price_heading
+{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(109,113,142);
+    font-family: 'Montserrat'; 
+    font-weight: 900;
+    
+    margin: 0px;
+}
+.price_heading h5
+{
+    
+    margin: 0px;
+}
+.type
+{
+    
+    
+    color: rgb(185,185,197);
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
+.type_A
+{
+    
+    position: relative;
+    top:-5px;
+    left : 20px;
+}
+.type_M
+{
+    
+    position: relative;
+    top:-5px;
+    right: 20px;
+}
+
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	font-size: 26px;
+	background-image: linear-gradient(to  right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+	
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+
+
+input:checked + label:after {
+	left: calc(100% - 4px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 8px;
+}
+.card_container
+{
+    margin-top: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+   
+    display: flex;
+}
+
+.card
+{
+    flex: 33%;
+    text-align: center;
+    border-radius:10px ;
+    
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+}
+
+#card1
+{
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+#card3
+{
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+.card_text
+{
+    color: rgb(74,77,96);
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: Montserrat;
+   
+}
+.card_price
+{
+    color: rgb(74,77,96);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 65px;
+    font-family: Montserrat;
+}
+.dollar
+{
+    font-size:36px;
+    position: relative;
+    top:-8px;
+}
+
+.card_hr
+{
+    background-color: rgba(128, 128, 128, 0.01);
+    width: 80%;
+}
+
+.card_button
+{
+    border: solid;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 80%;
+    font-size: 13px;
+    margin-left: 10%;
+    border-width: 1px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: white;
+    background-image: linear-gradient(to  right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    transition: .5s;
+}
+#card2
+{
+    background-image: linear-gradient(to bottom right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    padding-top: 40px;
+    margin-bottom: -40px;
+    position: relative;
+    top:-20px
+}
+.card2_text
+{
+    color: #fff;
+}
+.card2_button
+{
+    border: solid;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 80%;
+    font-size: 13px;
+    margin-left: 10%;
+    border-width: 1px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: hsl(237, 63%, 64%);
+    background-color: white;
+    transition: 0.3s;
+}
+.card2_button:hover
+{
+    background-color: hsl(237, 63%, 64%);
+    color: white;
+}
+.card_button:hover
+{
+    background-image: linear-gradient(to  right,rgb(255, 255, 255),rgb(255, 255, 255));
+    color: hsl(237, 63%, 64%);  
+}
+
+
+/* for 2 cards */
+@media only screen and (max-width: 1200px) 
+{
+    .card_container
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+  }
+@media only screen and (max-width: 860px) 
+{
+    .card_container
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }
+
+@media only screen and (max-width: 720px) 
+{
+    .card_container
+    {
+        flex-direction: column;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #card2
+    {
+        padding-top: 0px;
+        margin-bottom: 0px;
+        position:relative;
+        top:0px;
+    }
+    .card
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  }

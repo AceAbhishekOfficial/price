@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    
+    <title>Pricing</title>
+    
+</head>
+<body>
+    <div class="back">
+        <img src="assets/img/bg-bottom.svg" alt="" class="backBottom">
+        <img src="assets/img/bg-top.svg" alt="" class="backTop">
+    </div>
+    
+   <div class="main">
+    <div class="price_heading">
+        <h5>Our Pricing</h5>  
+    </div>
+    <div class="type">
+        <span class="type_M">Monthly</span>
+        <input type="checkbox" id="switch" /><label for="switch" onclick="change()"><span style="color: rgba(255, 0, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
+        <span class="type_A">Annualy</span>
+    </div>
+    <div class="card_container">
+        <div class="card" id="card1">
+            <div class="card_heading card_text">
+                Basic
+            </div>
+            <div class="card_price">
+                <span class="dollar">$ </span><span id="price_card1">19.99</span>
+            </div>
+            <hr class="card_hr">
+            <div class="card_storage card_text">
+                500 GB Storage
+            </div>
+            <hr class="card_hr">
+            <div class="card_user_allowed card_text">
+                2 Users Allowed
+            </div>
+            <hr class="card_hr">
+            <div class="card_send card_text">
+                Send Upto 3 GB
+            </div>
+            <hr class="card_hr">
+            <div class="card_button card_text">
+                LEARN MORE
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <div class="card_heading card_text card2_text">
+                Professional
+            </div>
+            <div class="card_price card2_text">
+                <span class="dollar">$ </span><span id="price_card2">24.99</span>
+            </div>
+            <hr class="card_hr">
+            <div class="card_storage card_text card2_text">
+                1 TB Storage
+            </div>
+            <hr class="card_hr">
+            <div class="card_user_allowed card_text card2_text">
+                5 Users Allowed
+            </div>
+            <hr class="card_hr">
+            <div class="card_send card_text card2_text">
+                Send Upto 10 GB
+            </div>
+            <hr class="card_hr">
+            <button class="card2_button card_text">LEARN MORE</button>       
+        </div>
+        <div class="card" id="card3">
+            <div class="card_heading card_text">
+                Master
+            </div>
+            <div class="card_price">
+                <span class="dollar">$ </span><span id="price_card3">39.99</span>
+            </div>
+            <hr class="card_hr">
+            <div class="card_storage card_text">
+                2 TB Storage
+            </div>
+            <hr class="card_hr">
+            <div class="card_user_allowed card_text">
+                10 Users Allowed
+            </div>
+            <hr class="card_hr">
+            <div class="card_send card_text">
+                Send Upto 20 GB
+            </div>
+            <hr class="card_hr">
+            <div class="card_button card_text">
+                LEARN MORE
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+<script src="assets/js/price.js"></script>
+</html>
